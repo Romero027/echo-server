@@ -46,11 +46,11 @@ var upgrader = websocket.Upgrader{
 func handler(wr http.ResponseWriter, req *http.Request) {
 	defer req.Body.Close()
 
-	if os.Getenv("LOG_HTTP_BODY") != "" || os.Getenv("LOG_HTTP_HEADERS") != "" {
-		fmt.Printf("--------  %s | %s %s\n", req.RemoteAddr, req.Method, req.URL)
-	} else {
-		fmt.Printf("%s | %s %s\n", req.RemoteAddr, req.Method, req.URL)
-	}
+// 	if os.Getenv("LOG_HTTP_BODY") != "" || os.Getenv("LOG_HTTP_HEADERS") != "" {
+// 		fmt.Printf("--------  %s | %s %s\n", req.RemoteAddr, req.Method, req.URL)
+// 	} else {
+// 		fmt.Printf("%s | %s %s\n", req.RemoteAddr, req.Method, req.URL)
+// 	}
 
 	if os.Getenv("LOG_HTTP_HEADERS") != "" {
 		fmt.Printf("Headers\n")
