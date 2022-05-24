@@ -25,6 +25,14 @@ information about HTTP request headers and bodies back to the client.
 
 ## Build and push the server docker image
 
+```
+make release
+# Edit Dockerfile's TARGETPLATFORM
+docker build -t DOCKER_ID/echo-server:latest -f Dockerfile .
+docker login
+docker push DOCKER_ID/echo-server:latest 
+```
+
 ## Running the server
 
 The examples below show a few different ways of running the server with the HTTP
