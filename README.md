@@ -23,6 +23,8 @@ information about HTTP request headers and bodies back to the client.
   client may send the `X-Send-Server-Hostname` request header to `true` or
   `false` to override this server-wide setting on a per-request basis.
 
+## Build and push the server docker image
+
 ## Running the server
 
 The examples below show a few different ways of running the server with the HTTP
